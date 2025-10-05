@@ -11,14 +11,14 @@
 
 
 WORKDIR="/data/users/trakic/assembly_annotation_course"
-FILES="$WORKDIR/for_busco"
+FILES="$WORKDIR/for_busco/hifisam.asm.bp.p_ctg.fa"
 MODULE="BUSCO/5.4.2-foss-2021a"
 OUTDIR="/data/users/trakic/assembly_annotation_course/results/week3_busco"
 DOWNLOAD_DIR="/data/users/trakic/assembly_annotation_course/"
 
 module load $MODULE
 
-busco -i $FILES -m genome -l brassicales_odb10 -o "busco_genome" --out_path $OUTDIR -c 32 --download_path $DOWNLOAD_DIR
+busco -i $FILES -m genome -l brassicales_odb10 -o "busco_hifisam" --out_path $OUTDIR -c 32 --download_path $DOWNLOAD_DIR
 
-#only ran on one file, running separate scripts for two others...
+
 
