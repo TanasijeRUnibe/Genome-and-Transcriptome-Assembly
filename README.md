@@ -53,6 +53,6 @@ The repository is organized chronologically by week and analysis step:
 
 ## Data used
 - The tools were run from data available from the following publications:
-  -https://www.nature.com/articles/s41588-024-01715-9
-  -http://dx.doi.org/10.1038/s41467-020-14779-y
+  https://www.nature.com/articles/s41588-024-01715-9
+  & http://dx.doi.org/10.1038/s41467-020-14779-y
 - My accession was RRS-10
