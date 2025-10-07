@@ -20,10 +20,8 @@ The repository is organized chronologically by week and analysis step:
 |------|----------------|-------------|
 | **Week 1** | **Read Quality Control & k-mer Analysis** | `01fastp.sh` performs adapter trimming and quality filtering using **Fastp**. <br> `02jellyfish.sh` and `02_1jellyfish_histo.sh` count and visualize k-mer frequency distributions using **Jellyfish**, providing an overview of genome size and complexity. |
 | **Week 2** | **Genome and Transcriptome Assembly** | `03_w2_flye.sh` assembles PacBio HiFi reads with **Flye**. <br> `04_w2_hifasm.sh` and `04_2_w2_hifasmconvert.sh` perform genome assembly and conversion with **Hifiasm**. <br> `05_w2_ija.sh` assembles using **IPA (HiCanu/IJA)**. <br> `06_w2_trinity.sh` runs **Trinity** for *de novo* transcriptome assembly. |
-| **Week 3** | **Assembly Quality Assessment (BUSCO)** | `07_1_w3_busco_hifisam.sh`, `07_flye_w3_busco_genome.sh`, `07_ija_w3_busco_genome.sh`, and `07_2_w3_busco_transcriptome.sh` evaluate assembly completeness using **BUSCO** against relevant lineage datasets. |
-| **Week 3** | **Assembly Statistics (QUAST)** | `08_1_quast_noref.sh` and `08_2_quast_ref.sh` compute detailed assembly statistics with **QUAST**, both with and without a reference genome. |
- **Read Mapping and Polishing Assessment (Merqury)** | `09_w3_merqury.sh` performs **Merqury** analysis for consensus accuracy estimation using k-mer based metrics. |
- **Synteny and Structural Comparison (MUMmer/Nucmer)** | `10_w3_nucmer_mummer.sh` runs **MUMmer/Nucmer** for whole-genome alignment and visualization of synteny and structural differences between assemblies and the reference. |
+| **Week 3** | **Assembly Evaluation & Comparative Analysis** | `07_1_w3_busco_hifisam.sh`, `07_flye_w3_busco_genome.sh`, `07_ija_w3_busco_genome.sh`, and `07_2_w3_busco_transcriptome.sh` assess assembly completeness using **BUSCO**. <br> `08_1_quast_noref.sh` and `08_2_quast_ref.sh` generate detailed assembly metrics using **QUAST**. <br> `09_w3_merqury.sh` evaluates consensus quality using **Merqury**. <br> `10_w3_nucmer_mummer.sh` performs whole-genome alignments with **MUMmer/Nucmer** to visualize synteny and structural differences. |
+
 
 ---
 
